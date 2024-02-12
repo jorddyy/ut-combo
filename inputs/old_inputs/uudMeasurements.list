@@ -1,0 +1,113 @@
+#
+# measurements to be used for average
+#
+
+#  /* 
+#     errFlag tells us which errors are to be read in
+#     0 ( 1) - statistical error
+#     1 ( 2) - ... asymmetric
+#     2 ( 4) - systematic error
+#     3 ( 8) - ... asymmetric
+#     4 (16) - extra error
+#     5 (32) - ... asymmetric
+#  */
+
+###########
+#expt	system	n(bb)	meas	value	errFlag	--- errors ---	reference   comment
+###########
+
+### pi+ pi- ###
+BaBar	'pi+ pi-'	467	S_CP	-0.68	5	0.10	0.03	'PRD 87 (2013) 052009'
+BaBar	'pi+ pi-'	467	C_CP	-0.25	5	0.08	0.02	'PRD 87 (2013) 052009'
+BaBar	'pi+ pi-'	CORRELATION	S_CP	C_CP	1	-0.056
+
+Belle	'pi+ pi-'	772	S_CP	-0.64	5	0.08	0.03	'PRD 88 (2013) 092003'
+Belle	'pi+ pi-'	772	C_CP	-0.33	5	0.06	0.03	'PRD 88 (2013) 092003'
+Belle	'pi+ pi-'	CORRELATION	S_CP	C_CP	1	-0.10
+
+#'LHCb Run 1'	'pi+ pi-'	3.0	S_CP	-0.63	5	0.05	0.01	'PR D98 (2018) 032004'
+#'LHCb Run 1'	'pi+ pi-'	3.0	C_CP	-0.34	5	0.06	0.01	'PR D98 (2018) 032004'
+#'LHCb Run 1'	'pi+ pi-'	CORRELATION	S_CP	C_CP	1	0.448
+#'LHCb Run 2'	'pi+ pi-'	1.9	S_CP	-0.706	5	0.042	0.013	'JHEP 2103 (2021) 075'
+#'LHCb Run 2'	'pi+ pi-'	1.9	C_CP	-0.311	5	0.045	0.015	'JHEP 2103 (2021) 075'
+#'LHCb Run 2'	'pi+ pi-'	CORRELATION	S_CP	C_CP	3	0.394	0.306
+'LHCb Average'	'pi+ pi-'		S_CP	-0.672	1	0.034	'JHEP 2103 (2021) 075'
+'LHCb Average'	'pi+ pi-'		C_CP	-0.320	1	0.038	'JHEP 2103 (2021) 075'
+'LHCb Average'	'pi+ pi-'	CORRELATION	S_CP	C_CP	1	0.405
+
+###
+### note that pi+pi-pi0 averages are in a separate file
+###
+
+### rho+ rho- ###
+
+BaBar	'rho+ rho-'	387	S_CP	-0.17 	13	0.20	0.05	-0.06	'PRD 76  (2007) 052007'
+BaBar	'rho+ rho-'	387	C_CP	0.01	5	0.15	0.06	'PRD 76  (2007) 052007'
+### not including f_long in the fit at present
+# BaBar	'rho+ rho-'	387	f_long  0.992	13	0.024	0.026	0.013	'PRD 76  (2007) 052007'
+BaBar	'rho+ rho-'	CORRELATION	S_CP	C_CP	1	-0.035
+
+#Belle	'rho+ rho-'	535	S_CP	 0.19	5	0.30	0.07	'PRD 76 (2007) 011104'
+#Belle	'rho+ rho-'	535	C_CP	-0.16	5	0.21	0.07	'PRD 76 (2007) 011104'
+#Belle	'rho+ rho-'	CORRELATION	S_CP	C_CP	1	0.10
+Belle	'rho+ rho-'	772	S_CP	-0.13	5	0.15	0.05	'PRD 93 (2016) 032010'
+Belle	'rho+ rho-'	772	C_CP	0.00	5	0.10	0.06	'PRD 93 (2016) 032010'
+### not including f_long in the fit at present
+# Belle	'rho+ rho-'	772	f_long  0.988	5	0.012	0.023	'PRD 93 (2016) 032010'
+Belle	'rho+ rho-'	CORRELATION	S_CP	C_CP	1	-0.018
+
+### rho0 rho0 ###
+
+BaBar	'rho0 rho0'	465	S_CP	0.3 	5	0.7	0.2	'PRD 78 (2008) 071104(R)'
+BaBar	'rho0 rho0'	465	C_CP	0.2	5	0.8	0.3	'PRD 78 (2008) 071104(R)'
+### not including f_long in the fit at present
+# BaBar	'rho0 rho0'	465	f_long  0.75	7	0.11	0.14	0.04	'PRD 78 (2008) 071104(R)'
+### correlations not available
+BaBar	'rho0 rho0'	CORRELATION	S_CP	C_CP	1	-0.035
+#BaBar	'rho0 rho0'	CORRELATION	S_CP	f_long	1	-0.006
+#BaBar	'rho0 rho0'	CORRELATION	C_CP	f_long	1	-0.174
+
+### a1+- pi-+ ###
+
+#BaBar	'a1+- pi-+'	384	A_CP	-0.07	5	0.07	0.02	'PRL 98 (2007) 181803'
+#BaBar	'a1+- pi-+'	384	C	-0.10	5	0.15	0.09	'PRL 98 (2007) 181803'
+#BaBar	'a1+- pi-+'	384	S	0.37	5	0.21	0.07	'PRL 98 (2007) 181803'
+#BaBar	'a1+- pi-+'	384	DeltaC	0.26	5	0.15	0.07	'PRL 98 (2007) 181803'
+#BaBar	'a1+- pi-+'	384	DeltaS	-0.14	5	0.21	0.06	'PRL 98 (2007) 181803'
+
+# correlations from BAD1400 v21 Tab.26 p.46
+#BaBar	'a1+- pi-+'	CORRELATION	A_CP	C	1	0.078
+#BaBar	'a1+- pi-+'	CORRELATION	A_CP	S	1	-0.015
+#BaBar	'a1+- pi-+'	CORRELATION	A_CP	DeltaC	1	-0.063
+#BaBar	'a1+- pi-+'	CORRELATION	A_CP	DeltaS	1	0.050
+#BaBar	'a1+- pi-+'	CORRELATION	C	S	1	-0.029
+#BaBar	'a1+- pi-+'	CORRELATION	C	DeltaC	1	-0.110
+#BaBar	'a1+- pi-+'	CORRELATION	C	DeltaS	1	0.008
+#BaBar	'a1+- pi-+'	CORRELATION	S	DeltaC	1	0.000
+#BaBar	'a1+- pi-+'	CORRELATION	S	DeltaS	1	-0.008
+#BaBar	'a1+- pi-+'	CORRELATION	DeltaC	DeltaS	1	-0.022
+
+BaBar	'a1+- pi-+'	384	A_-+	0.07	5	0.21	0.15	'PRL 98 (2007) 181803'
+BaBar	'a1+- pi-+'	384	A_+-	0.15	5	0.15	0.07	'PRL 98 (2007) 181803'
+BaBar	'a1+- pi-+'	CORRELATION	A_-+	A_+-	1	0.63
+
+#Belle	'a1+- pi-+'	772	A_CP	-0.06	5	0.05	0.07	'PRD 86 (2012) 092012'
+#Belle	'a1+- pi-+'	772	C	-0.01	5	0.11	0.09	'PRD 86 (2012) 092012'
+#Belle	'a1+- pi-+'	772	S	-0.51	5	0.14	0.08	'PRD 86 (2012) 092012'
+#Belle	'a1+- pi-+'	772	DeltaC	0.54	5	0.11	0.07	'PRD 86 (2012) 092012'
+#Belle	'a1+- pi-+'	772	DeltaS	-0.09	5	0.14	0.06	'PRD 86 (2012) 092012'
+
+#Belle	'a1+- pi-+'	CORRELATION	A_CP	C	1	-0.20
+#Belle	'a1+- pi-+'	CORRELATION	A_CP	S	1	0.02
+#Belle	'a1+- pi-+'	CORRELATION	A_CP	DeltaC	1	0.01
+#Belle	'a1+- pi-+'	CORRELATION	A_CP	DeltaS	1	0.09
+#Belle	'a1+- pi-+'	CORRELATION	C	S	1	-0.01
+#Belle	'a1+- pi-+'	CORRELATION	C	DeltaC	1	0.03
+#Belle	'a1+- pi-+'	CORRELATION	C	DeltaS	1	-0.05
+#Belle	'a1+- pi-+'	CORRELATION	S	DeltaC	1	-0.03
+#Belle	'a1+- pi-+'	CORRELATION	S	DeltaS	1	0.02
+#Belle	'a1+- pi-+'	CORRELATION	DeltaC	DeltaS	1	-0.01
+
+Belle	'a1+- pi-+'	772	A_-+	-0.04	5	0.26	0.19	'PRD 86 (2012) 092012'
+Belle	'a1+- pi-+'	772	A_+-	0.07	5	0.08	0.10	'PRD 86 (2012) 092012'
+Belle	'a1+- pi-+'	CORRELATION	A_-+	A_+-	1	0.61

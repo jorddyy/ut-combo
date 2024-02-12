@@ -1,0 +1,106 @@
+{
+    "ResultSet": [
+        {
+            "ResultSetLabel": "BaBar",
+            "Description": [
+                "PRD 87 (2013) 052009"
+            ],
+            "Parameter": [
+                {
+                    "Name": "S_CP",
+                    "Value": -0.68,
+                    "Error": 0.1
+                },
+                {
+                    "Name": "C_CP",
+                    "Value": -0.25,
+                    "Error": 0.08
+                }
+            ],
+            "SystematicErrors": [
+                {
+                    "Name": "TotalSyst",
+                    "Values": [
+                        0.03,
+                        0.02
+                    ]
+                }
+            ],
+            "StatisticalCorrelationMatrix": [
+                [
+                    1.0,
+                    -0.056
+                ],
+                [
+                    -0.056,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "ResultSetLabel": "Belle",
+            "Description": [
+                "PRD 88 (2013) 092003"
+            ],
+            "Parameter": [
+                {
+                    "Name": "S_CP",
+                    "Value": -0.64,
+                    "Error": 0.08
+                },
+                {
+                    "Name": "C_CP",
+                    "Value": -0.33,
+                    "Error": 0.06
+                }
+            ],
+            "SystematicErrors": [
+                {
+                    "Name": "TotalSyst",
+                    "Values": [
+                        0.03,
+                        0.03
+                    ]
+                }
+            ],
+            "StatisticalCorrelationMatrix": [
+                [
+                    1.0,
+                    -0.1
+                ],
+                [
+                    -0.1,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "ResultSetLabel": "LHCb Average",
+            "Description": [
+                "JHEP 2103 (2021) 075"
+            ],
+            "Parameter": [
+                {
+                    "Name": "S_CP",
+                    "Value": -0.672,
+                    "Error": 0.034
+                },
+                {
+                    "Name": "C_CP",
+                    "Value": -0.32,
+                    "Error": 0.038
+                }
+            ],
+            "StatisticalCorrelationMatrix": [
+                [
+                    1.0,
+                    0.405
+                ],
+                [
+                    0.405,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}
