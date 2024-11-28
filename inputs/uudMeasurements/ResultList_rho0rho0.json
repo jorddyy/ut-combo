@@ -1,0 +1,41 @@
+{
+    "ResultSet": [
+        {
+            "ResultSetLabel": "BaBar",
+            "Description": [
+                "PRD 78 (2008) 071104(R)"
+            ],
+            "Parameter": [
+                {
+                    "Name": "S_CP",
+                    "Value": 0.3,
+                    "Error": 0.7
+                },
+                {
+                    "Name": "C_CP",
+                    "Value": 0.2,
+                    "Error": 0.8
+                }
+            ],
+            "SystematicErrors": [
+                {
+                    "Name": "TotalSyst",
+                    "Values": [
+                        0.2,
+                        0.3
+                    ]
+                }
+            ],
+            "StatisticalCorrelationMatrix": [
+                [
+                    1.0,
+                    -0.035
+                ],
+                [
+                    -0.035,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}

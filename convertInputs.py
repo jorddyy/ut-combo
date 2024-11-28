@@ -61,8 +61,12 @@ def parse_input_file(input_file, mode):
             if f'### {mode} ###' in line:
                 start_reading = True
             # Stop reading here
-            elif '###' in line and start_reading:
+            
+            # check if ### occurs twice in one line
+            elif line.count('###') > 1 and start_reading:
                 break
+            # elif '###' in line and start_reading:
+            #     break
             # Skip comments
             elif line.startswith('#'):
                 continue
@@ -108,6 +112,10 @@ def parse_input_file(input_file, mode):
                 elif errFlag == 5:
                     error_stat = float(parts[6])
                     error_syst = float(parts[7])
+                elif errFlag == 13:
+                    print("Warning: Error flag 13 encountered. Using average of syst errors.")
+                    error_stat = float(parts[6])
+                    error_syst = (abs(float(parts[7])) + abs(float(parts[8])))/2
                 else:
                     raise ValueError(f"Unknown error flag: {errFlag}")
 
@@ -119,7 +127,7 @@ def parse_input_file(input_file, mode):
                 
                 results[experiment]["Parameter"].append(parameter)
                 
-                if "SystematicErrors" not in results[experiment] and errFlag == 5:
+                if "SystematicErrors" not in results[experiment] and errFlag in [5,13]:
                     results[experiment]["SystematicErrors"] = [{
                         "Name": "TotalSyst",
                         "Values": [error_syst]

@@ -1,0 +1,78 @@
+{
+    "ResultSet": [
+        {
+            "ResultSetLabel": "BaBar",
+            "Description": [
+                "PRD 76  (2007) 052007"
+            ],
+            "Parameter": [
+                {
+                    "Name": "S_CP",
+                    "Value": -0.17,
+                    "Error": 0.2
+                },
+                {
+                    "Name": "C_CP",
+                    "Value": 0.01,
+                    "Error": 0.15
+                }
+            ],
+            "SystematicErrors": [
+                {
+                    "Name": "TotalSyst",
+                    "Values": [
+                        0.055,
+                        0.06
+                    ]
+                }
+            ],
+            "StatisticalCorrelationMatrix": [
+                [
+                    1.0,
+                    -0.035
+                ],
+                [
+                    -0.035,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "ResultSetLabel": "Belle",
+            "Description": [
+                "PRD 93 (2016) 032010"
+            ],
+            "Parameter": [
+                {
+                    "Name": "S_CP",
+                    "Value": -0.13,
+                    "Error": 0.15
+                },
+                {
+                    "Name": "C_CP",
+                    "Value": 0.0,
+                    "Error": 0.1
+                }
+            ],
+            "SystematicErrors": [
+                {
+                    "Name": "TotalSyst",
+                    "Values": [
+                        0.05,
+                        0.06
+                    ]
+                }
+            ],
+            "StatisticalCorrelationMatrix": [
+                [
+                    1.0,
+                    -0.018
+                ],
+                [
+                    -0.018,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}
